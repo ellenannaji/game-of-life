@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>TaskVerse Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<!-- Navigation Bar -->
+
+<div class="navbar">
+
+<h2>
+🚀 TaskVerse
+</h2>
+
+
+<button onclick="logout()">
+Logout
+</button>
+
+
+</div>
+
+
+
+<!-- User Profile -->
+
+<div class="card profile">
+
+
+<div>
+
+<h2>
+Welcome, <span id="username"></span> 👋
+</h2>
+
+
+<p>
+Complete tasks and earn more points!
+</p>
+
+
+</div>
+
+
+
+<div>
+
+<h3>
+🏆 Points
+</h3>
+
+<h1 class="points" id="points">
+0
+</h1>
+
+<button onclick="openProfile()">
+    My Profile 👤
+</button>
+<button onclick="openHistory()">
+📜 Task History
+</button>
+</div>
+
+
+</div>
+
+
+
+
+<!-- Progress -->
+
+<div class="card">
+
+
+<h2>
+📊 Progress
+</h2>
+
+
+<div class="progress">
+
+
+<div class="progress-bar" id="progressBar">
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- Personal Tasks -->
+
+<div class="card">
+
+
+<h2>
+📝 Personal Tasks
+</h2>
+
+
+<input 
+type="text"
+id="taskInput"
+placeholder="Enter your task">
+
+
+<button onclick="addTask()">
+Add Task
+</button>
+
+
+
+<ul id="taskList">
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+<!-- Professional Tasks -->
+
+
+<div class="card">
+
+
+<h2>
+💼 Professional Tasks
+</h2>
+
+
+
+<input 
+type="text"
+id="professionalInput"
+placeholder="Enter professional task">
+
+
+
+<input 
+type="file"
+id="taskFile">
+
+
+
+<button onclick="addProfessionalTask()">
+
+Submit Task
+
+</button>
+
+
+
+
+<ul id="professionalList">
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+<!-- Leaderboard -->
+
+
+<div class="card">
+
+
+<h2>
+🥇 Leaderboard
+</h2>
+
+
+
+<ul id="leaderboard">
+
+<li>
+Loading...
+</li>
+
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+<!-- Reviewer Button -->
+
+
+<div class="card">
+
+
+<button onclick="openReviewer()">
+
+🛠 Reviewer Panel
+
+</button>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+<script src="app.js"></script>
+
+
+</body>
+
+
+</html>

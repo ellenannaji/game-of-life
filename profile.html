@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TaskVerse Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>My Profile 👤</h1>
+
+    <div class="profile-card">
+
+        <label>Name</label>
+        <input id="profileName" type="text">
+
+        <label>Email</label>
+        <input id="profileEmail" type="email" disabled>
+
+        <label>Role</label>
+        <input id="profileRole" disabled>
+
+        <label>Total Points</label>
+        <input id="profilePoints" disabled>
+
+        <label>Completed Tasks</label>
+        <input id="profileTasks" disabled>
+
+
+        <button onclick="updateProfile()">
+            Save Changes
+        </button>
+
+        <button onclick="goBack()">
+            Back Dashboard
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="app.js"></script>
+
+<script>
+loadProfile();
+</script>
